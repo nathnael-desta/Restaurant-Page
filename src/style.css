@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    
+}
+
+.heading {
+    background-color: #1D4C8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    font-family: 'pirate';
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.main {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center ;
+    align-items: center;
+    background-image: url(./Assets/baratie\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4C8B;
+    width: 25vw;
+    height: 16vh;
+    padding: 2rem 4rem;
+    border-radius: 40px;
+    font-size: 2rem;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    transition: color 0.2s ease;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.pages:hover {
+    background-color: #194379;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+svg {
+    fill: #f2f2f2;
+    transform: scale(1.23);
+    transition: fill 0.3s ease ;
+    transition: background-color 0.3s ease;
+}
+
+.home {
+    position: absolute;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border 0.6s ease;
+    transition: background-color 0.6s ease;
+}
+
+svg:hover{
+    fill:#1D4C8B;
+}
+
+.home:hover {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    
+}
+
+.items {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    background-color: #1D4C8B;
+    width: 25vw;
+    padding: 10px 10px;
+    border-radius: 40px;
+    font-size: 2rem;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    transition: color 0.2s ease;
+    
+}
+
+.items:hover {
+    background-color: #194379;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.breakfastDiv {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center ;
+    align-items: center;
+    background-image: url(./Assets/baratie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lunchDiv {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center ;
+    align-items: center;
+    background-image: url(./Assets/baratie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dinnerDiv {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center ;
+    align-items: center;
+    background-image: url(./Assets/baratie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.inner {
+    background-image: url(./Assets/Untitled.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.bdiv1 {
+    background-image: url(./Assets/Morning_Star_Soup.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bdiv1::before {
+    position: absolute;
+    content: "Morning Star Soup";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.bdiv2 {
+    background-image: url(./Assets/one_piece_Devil_Fruit_Pancakes.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bdiv2::before {
+    position: absolute;
+    content: "Devil Fruit Pancakes";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.bdiv3 {
+    background-image: url(./Assets/one_piece_anime_Fluffy_Omelet.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bdiv3::before {
+    position: absolute;
+    content: "Fluffy Omelet";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ldiv1 {
+    background-image: url(./Assets/one_piece_anime_themed_Ice_Cream.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ldiv1::before {
+    position: absolute;
+    content: "Ice Cream";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ldiv2 {
+    background-image: url(./Assets/one_piece_anime_Seafood_Fried_Rice.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ldiv2::before {
+    position: absolute;
+    content: "Seafood Fried Rice";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ldiv3 {
+    background-image: url(./Assets/one_piece_Grilled_Fish_Sandwich.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ldiv3::before {
+    position: absolute;
+    content: "Fish Sandwich";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ddiv1 {
+    background-image: url(./Assets/one_piece_anime_themed_All_Blue_Seafood_Platter_.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ddiv1::before {
+    position: absolute;
+    content: "All Blue Seafood";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ddiv2 {
+    background-image: url(./Assets/one_piece_themed_Pan-Seared_Salmon.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ddiv2::before {
+    position: absolute;
+    content: "Pan-Seared Salmon";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.ddiv3 {
+    background-image: url(./Assets/one_piece_Vegetable_Lasagna.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ddiv3::before {
+    position: absolute;
+    content: "Vegetable Lasagna";
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-wrap:nowrap;
+}
+
+.breakfastDiv div, .lunchDiv div, .dinnerDiv div {
+    height: 40%;
+}
